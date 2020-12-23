@@ -1,0 +1,26 @@
+<div class="campeonato">
+  <div class="campeonatoTitle">
+    <h1 class="title">CHAMPION MOVIES <i class="fa fa-trophy" aria-hidden="true"></i></h1>
+    <p class="intro">Sinta-se a vontade para selecionar 8 filmes e, após selecioná-los, clique em "Gerar Campeonato"</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <button class="btn btnGraCamp" routerLink="campeao">Gerar Campeonato <i class="fa fa-trophy trophy" aria-hidden="true"></i></button>
+      <button class="btn btnBack col-sm-1" (click)="back()">Limpar</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 cards"  *ngFor="let filme of filmes">
+      <div class="card">
+        <img class="card-img-top" [src]="filme.image" alt="{{filme.nome}}" mat-raised-button matTooltip="{{filme.descricao}}">
+        <div class="card-body tamDesc">
+          <h5 class="card-title nomeFilme">{{filme.nome}}</h5>
+          <p class="card-text">{{filme.ano}}</p>
+          <button href="#" class="btn buttonSelected"(click)="addItem()" *ngIf="count < 8" onclick="this.disabled = true;">Selecionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

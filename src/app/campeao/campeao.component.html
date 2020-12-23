@@ -1,0 +1,35 @@
+<div class="campeao">
+  <div>
+    <div class="col-12 col-sm-12 campeonato">
+      <h1 class="title">CHAMPION MOVIES <i class="fa fa-trophy" aria-hidden="true"></i></h1>
+    </div>
+  </div>
+
+  <div class="container primCampeao">
+    <div class="row">
+      <div class="col imgTrophy">
+        <h1>VEJA ABAIXO QUEM VENCEU O CAMPEONATO!</h1>
+        <img [src]="'../../assets/images/trophy2.png'" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row result" >
+      <div class=""></div>
+      <div class=" col-sm-6 text-center cards"  *ngFor="let filme of filmes">
+        <div class="card text-center">
+          <img class="card-img-top" [src]="filme.image" alt="{{filme.nome}}">
+          <div class="card-body tamDesc">
+            <h5 class="card-title nomeFilme">{{filme.nome}}</h5>
+        <!-- <p class="card-text">{{filme.descricao}}</p> -->
+            <p class="card-text ano">{{filme.ano}}</p>
+            <div class="btn btnNota">{{filme.nota}} <i class="fa fa-star" aria-hidden="true"></i></div>
+            <div class="btn btnPosicao">{{filme.posicao}} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

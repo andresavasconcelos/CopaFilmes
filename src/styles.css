@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.background{
+  /* background-color: #8e44ad; */
+  background-color: #8576E6;
+}
+
+@font-face {
+  font-family: dosis;
+  src: url(assets/fonts/Dosis/static/Dosis-Regular.ttf) format("opentype");
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

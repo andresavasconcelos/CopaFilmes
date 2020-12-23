@@ -1,0 +1,78 @@
+.campeao{
+  height: 1350px;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.title{
+  font-family: dosis, sans-serif;
+  text-align: center;
+  color: #FFEE58;
+  font-weight: 800;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.primCampeao{
+  margin-top: 60px;
+}
+
+.imgTrophy img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgTrophy h1{
+  text-align: center;
+  color: #FFFF;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 41px;
+  margin-bottom: 17px;
+}
+
+.result {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.tamDesc .nomeFilme{
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+ }
+
+.tamDesc .ano{
+  margin-bottom: 30px;
+}
+
+.btnNota{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: 20px;
+
+  background-color: #f1c40f;
+  color: #ffff;
+  font-weight: 700;
+
+  cursor: default!important;
+}
+
+.btnPosicao{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #8e44ad;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 36px;
+  height: 77px;
+
+  cursor: default!important;
+}
